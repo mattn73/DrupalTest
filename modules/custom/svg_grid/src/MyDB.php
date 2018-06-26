@@ -16,7 +16,7 @@ class MyDB {
     $connection = \Drupal::database();
     $query = $connection ->select('node_field_data', 'n'  );
     $query->fields('n', ['nid']);
-    $query->condition('n.type','lectuer');
+    $query->condition('n.type','lecturer');
     $result = $query->execute()->fetchAll();
     
     return $result;

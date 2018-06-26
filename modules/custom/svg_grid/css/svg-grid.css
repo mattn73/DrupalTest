@@ -149,13 +149,13 @@
 }
 
 /* older webkit */
-/* .demo-2 .grid figcaption h2, 
+.demo-2 .grid figcaption h2, 
 .demo-2 .grid figcaption p
  {
 	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1); 
 	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
 	timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
-} */
+}
 
 .demo-2 .grid a:hover figcaption p
  {

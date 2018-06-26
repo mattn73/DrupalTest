@@ -3,6 +3,7 @@ svg-hover:
   css:
     theme:
         css/svg-grid.css: {}
+        css/global-styling.css: {}
       
   js:
     js/snap.svg-min.js: {}
