@@ -1,0 +1,25 @@
+name: custom theme
+type: theme
+description: 'A test for a custom theme'
+core: 8.x
+
+
+
+libraries:
+  - custom_theme/global-styling
+  - custom_theme/global-scripting
+
+
+base theme: bootstrap
+
+
+regions:
+  navigation: 'Navigation'
+  header: 'Top Bar'
+  banner: 'banner'
+  content: 'Content'
+  sidebar_first: 'Side Bar Left'
+  sidebar_second: 'Side Bar right  '
+  footer: 'Footer'
+  overlay: 'overlay'
+  

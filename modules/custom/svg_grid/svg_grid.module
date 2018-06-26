@@ -1,0 +1,13 @@
+<?php
+
+function svg_grid_theme($existing, $type, $theme, $path) {
+  $variables = array(
+    'svg_grid' => array(
+      'variables' => array(
+        'data' => NULL,
+      ),
+      'template' => 'svg_grid',
+    ),
+  );
+  return $variables;
+}

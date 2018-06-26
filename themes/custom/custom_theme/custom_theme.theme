@@ -1,0 +1,30 @@
+<?php
+
+
+use Drupal\bootstrap\Bootstrap;
+use Drupal\user\Entity;
+use Drupal\user\Entity\Role;
+
+/**
+ * Initialize the active theme.
+ */
+Bootstrap::initialize();
+
+
+
+/**
+ * {@inheritdoc}
+ *
+ * @see \Drupal\bootstrap\Bootstrap::preprocess()
+ */
+function custom_theme_preprocess(&$variables, $hook, $info) {
+  Bootstrap::preprocess($variables, $hook, $info);
+  $admin = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id())->hasRole('administrator');
+    //$admin = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id())->getRoles();
+  
+
+  $variables['admin'] = $admin;
+  
+ 
+
+}

@@ -1,0 +1,16 @@
+{{ attach_library('course/grid-css') }}
+
+<h1>Members</h1>
+<div  class="grid-container">
+
+    <div class="grid-item" >TITLE</div>
+    <div class="grid-item">Taxonomy</div>
+    {% for item in data %}
+      
+        <div class="grid-item">{{ item.title }}</div>
+        <div class="grid-item"><span>{{ item.name }}</span></div>
+       
+    {% endfor %}
+</div>
+
+

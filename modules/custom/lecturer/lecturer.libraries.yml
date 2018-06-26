@@ -1,0 +1,14 @@
+bootstrap-pagination:
+  version: 1.x
+  css:
+    theme:
+      css/dataTables.bootstrap.min.css: {}
+      css/custom-css.css: {}
+
+  js:
+    js/boostrap-pagination.js: {}
+    js/jquery.dataTables.min.js: {}
+
+  dependencies:
+    - core/jquery
+  

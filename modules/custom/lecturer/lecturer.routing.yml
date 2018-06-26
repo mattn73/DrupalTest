@@ -1,0 +1,7 @@
+lecturer.pager:
+  path: '/lecturer/pager'
+  defaults:
+    _controller: 'Drupal\lecturer\Controller\lecturerController::pager'
+    _title: 'Table With Pager'
+  requirements:
+    _permission: 'access content'

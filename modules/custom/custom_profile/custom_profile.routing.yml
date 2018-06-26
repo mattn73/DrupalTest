@@ -1,0 +1,14 @@
+CustomProfile.SaveData:
+  path: 'admin/custom_profile/CustomProfileBlockForm'
+  defaults:
+      _form: '\Drupal\custom_profile\Form\custom_profileBlockForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+
+CustomProfile.LoadData:
+  path: 'admin/custom_profile/LoadData'
+  defaults:
+    _controller: '\Drupal\custom_profile\Controller\custom_profileController::LoadData'
+  requirements:
+    _permission: 'access content'

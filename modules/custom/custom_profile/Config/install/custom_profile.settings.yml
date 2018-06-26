@@ -1,0 +1,7 @@
+CustomProfile:
+  page_title: 'Custom Profile'
+  source_text: "some text"
+  name: "name"
+  address: "some text"
+  email: "this@example.com"
+

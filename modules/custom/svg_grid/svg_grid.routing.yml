@@ -1,0 +1,7 @@
+svgGrid.SaveData:
+  path: 'admin/svg_grid'
+  defaults:
+      _form: '\Drupal\svg_grid\Form\grid_dataForm'
+  requirements:
+    _permission: 'access content'
+

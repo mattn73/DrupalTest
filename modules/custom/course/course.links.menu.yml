@@ -1,0 +1,8 @@
+course.admin:
+  title: 'Course module settings'
+  description: 'Course Admin Page'
+  parent: system.admin_config_development
+  route_name: course.list
+  weight: 100
+
+

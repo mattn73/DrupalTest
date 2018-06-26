@@ -1,0 +1,6 @@
+customProfile.admin:
+  title: 'svg grid data settings'
+  description: 'Fill to add data to the svg grid'
+  parent: system.admin_config_development
+  route_name: svgGrid.SaveData
+  weight: 100

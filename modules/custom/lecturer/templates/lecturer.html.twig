@@ -1,0 +1,29 @@
+{{ attach_library('lecturer/bootstrap-pagination') }}
+
+<div class="container">
+  <h2>Lecturer Table</h2>
+  <p>This table show a list of lecturer</p>            
+   <table class="table" id="lecturerTable"  data-show-header="true" data-pagination="true"
+           data-id-field="name"
+           data-page-list="[5, 10, 25, 50, 100, ALL]"
+           data-page-size="5">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+{% for lecturer in data %}
+
+
+      <tr>
+        <td>{{lecturer.name|first.value}}</td>
+        <td>{{lecturer.surname|first.value}}</td>
+        <td>{{lecturer.email|first.value}}</td>
+      </tr>
+    
+ {% endfor %}
+    </tbody>
+ </table>

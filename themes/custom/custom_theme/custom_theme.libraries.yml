@@ -1,0 +1,21 @@
+global-styling:
+  version: 1.x
+  css:
+      css/layout.css: {}
+      css/style.css: {}
+      css/colors.css: {}
+
+      
+global-scripts:
+  version: 1.x
+  js: 
+    js/navmenu.js: {}   
+
+svg-hover:
+  version: 1.x
+  css:
+      css/svg-grid.css: {}
+      
+  js:
+    js/snap.svg-min.js: {}
+    js/svg-grid.js: {}

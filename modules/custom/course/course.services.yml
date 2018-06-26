@@ -1,0 +1,6 @@
+services:
+ course.MyDB:
+   class: Drupal\course\MyDB
+   arguments: ['@database']
+   tags:
+    - { name: backend_overridable }

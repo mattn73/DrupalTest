@@ -1,0 +1,6 @@
+services:
+ lecturer.DB:
+   class: Drupal\lecturer\DB
+   arguments: ['@database']
+   tags:
+    - { name: backend_overridable }

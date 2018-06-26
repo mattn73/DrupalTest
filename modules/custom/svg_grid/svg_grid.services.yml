@@ -1,0 +1,6 @@
+services:
+ svg_grid.MyDB:
+   class: Drupal\svg_grid\MyDB
+   arguments: ['@database']
+   tags:
+    - { name: backend_overridable }

@@ -1,0 +1,9 @@
+svg-hover:
+  version: 1.x
+  css:
+    theme:
+        css/svg-grid.css: {}
+      
+  js:
+    js/snap.svg-min.js: {}
+    js/svg-grid.js: {}

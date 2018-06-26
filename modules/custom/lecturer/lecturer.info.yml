@@ -1,0 +1,6 @@
+name: Lecturer
+type: module
+description: 'edit, Display and add Lecturer to the website'
+package: Development
+core: 8.x
+configure: lecturer.form

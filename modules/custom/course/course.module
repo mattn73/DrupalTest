@@ -1,0 +1,15 @@
+
+<?php
+//HOOK FOR THEME
+function course_theme($existing, $type, $theme, $path) {
+  $variables = array(
+    'course' => array(
+      'variables' => array(
+        'data' => NULL,
+      ),
+    ),
+  );
+  return $variables;
+}
+
+

@@ -1,0 +1,13 @@
+<?php
+
+function lecturer_theme($existing, $type, $theme, $path) {
+    $variables = array(
+      'lecturer' => array(
+        'variables' => array(
+          'data' => NULL,
+        ),
+        'template' => 'lecturer',
+      ),
+    );
+    return $variables;
+  }

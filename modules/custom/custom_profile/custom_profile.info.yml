@@ -1,0 +1,5 @@
+name: Custom Profile
+type: module
+description: 'Provide Profile view to the website'
+package: Custom
+core: 8.x

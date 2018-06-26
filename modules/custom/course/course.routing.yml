@@ -1,0 +1,23 @@
+course.list:
+  path: '/course/list'
+  defaults:
+    _controller: '\Drupal\course\Controller\CourseController::list'
+    _title: 'LIST OF Course'
+  requirements:
+    _permission: 'access content'
+
+
+lectuer.loadcsv:
+  path: '/lectuer/loadcsv'
+  defaults:
+    _form: '\Drupal\course\Form\lectuerForm'
+  requirements:
+    _permission: 'access content'
+
+  
+lecture.store:
+  path: 'lectuer/save/{data}'
+  defaults:
+    _controller: '\Drupal\course\Controller\courseController::saveCsv'
+  requirements:
+    _permission: 'access content'

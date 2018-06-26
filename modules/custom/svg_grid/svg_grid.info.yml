@@ -1,0 +1,5 @@
+name: SVG Grid
+type: module
+description: 'Provide a Svg grid display'
+package: Custom
+core: 8.x

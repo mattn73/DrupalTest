@@ -1,0 +1,7 @@
+name: Course Module
+description: Creates a page for Course.
+package: Custom
+type: module
+version: 1.0
+core: 8.x
+configure: course.form
