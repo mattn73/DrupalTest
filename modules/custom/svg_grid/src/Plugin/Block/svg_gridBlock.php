@@ -39,11 +39,11 @@ class svg_gridBlock extends BlockBase implements BlockPluginInterface
                 $index++;
                 $node = Node::load($nid);
 
-                $array[$index]['name'] = $node->get('field_name')->getValue();
-                $array[$index]['surname'] = $node->get('field_surname')->getValue();
-                $array[$index]['tel'] = $node->get('field_tel')->getValue();
-                $array[$index]['email'] = $node->get('field_email')->getValue();
-                $array[$index]['departement'] = $node->get('field_department')->getValue();
+                $array[$index]['name'] = ($node->get('field_name')->getValue())[0]['value'];
+                $array[$index]['surname'] = ($node->get('field_surname')->getValue())[0]['value'];
+                $array[$index]['tel'] = ($node->get('field_tel')->getValue())[0]['value'];
+                $array[$index]['email'] = ($node->get('field_email')->getValue())[0]['value'];
+                $array[$index]['departement'] = ($node->get('field_department')->getValue())[0]['value'];
                 // $array[$index]['image'] = $node->get('field_photo')->getValue();
 
                 $imageId = \Drupal::entityTypeManager()->getStorage('file')->load($node->field_photo->target_id);
